@@ -7,39 +7,14 @@
 </head>
 <body>
     <script>
-        op=(prompt ('escolha uma operacao: +, -, /, *'))
-        a=parseInt (prompt("digite o  primeiro numero"))
-        b=parseInt (prompt("digite o  segundo numero"))
-    
-        function adi(a,b){
-            result= a+b
-            return alert("seu resultado é"+result )
-        }
-        function sub(a,b){
-            result= a-b
-            return alert('seu resultado é'+result )
-        }
-        function mult(a,b){
-            result= a*b
-            return alert('seu resultado é'+result )
-        }
-        function div(a,b){
-        if (b!=0){
-            result= a/b
-            return alert('seu resultado é'+result )
-        }else{
-            return alert ("digite outro numero")
-        }
-        }
-        switch (op) {
-            case '+': adi(a,b)
-            break
-            case '-': sub(a,b)
-            break
-            case '/': div(a,b)
-            break
-            case '*': mult(a,b)
-        }
+    function media(a,b,c){
+        return (a+b+c)/3
+    }   
+    a=parseInt(prompt('digite um numero:'))
+    b=parseInt(prompt('digite um numero:'))
+    c=parseInt(prompt('digite um numero:'))
+    resultado = media(a,b,c)
+    alert ('a media aritimetica é '+ resultado)
 
 
 
