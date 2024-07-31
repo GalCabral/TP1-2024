@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        op=(prompt ('escolha uma operacao: +, -, /, *'))
+        a=parseInt (prompt("digite o  primeiro numero"))
+        b=parseInt (prompt("digite o  segundo numero"))
+    
+        function adi(a,b){
+            result= a+b
+            return alert("seu resultado é"+result )
+        }
+        function sub(a,b){
+            result= a-b
+            return alert('seu resultado é'+result )
+        }
+        function mult(a,b){
+            result= a*b
+            return alert('seu resultado é'+result )
+        }
+        function div(a,b){
+        if (b!=0){
+            result= a/b
+            return alert('seu resultado é'+result )
+        }else{
+            return alert ("digite outro numero")
+        }
+        }
+        switch (op) {
+            case '+': adi(a,b)
+            break
+            case '-': sub(a,b)
+            break
+            case '/': div(a,b)
+            break
+            case '*': mult(a,b)
+        }
+
+
+
+    </script>
+</body>
+</html>
